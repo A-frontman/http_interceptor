@@ -5,7 +5,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CustomHttpInterceptor } from './http-interceptor/custom-http-interceptor';
 import { GlobalErrorHandler } from './error_handler/global-error-handler';
 
-
 class EmptyClass {}
 
 @NgModule({

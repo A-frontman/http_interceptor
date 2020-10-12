@@ -6,6 +6,7 @@ import { Component, Injectable } from '@angular/core';
   template: `
     <div style="margin: 40px">
       <button (click)="throwError()">Throw Error</button>
+      <button (click)="throwHttpError()">Throw Http Error</button>
     </div>
     `
 })
@@ -17,6 +18,6 @@ export class AppComponent {
     throw new Error('');
   }
   public throwHttpError(): void {
-    this.http.get('fake URL');
+    this.http.get('fake URL').subscribe();
   }
 }
