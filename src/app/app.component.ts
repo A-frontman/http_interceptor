@@ -18,6 +18,6 @@ export class AppComponent {
     throw new Error('');
   }
   public throwHttpError(): void {
-    this.http.get('fake URL').subscribe();
+    this.http.get('/fake_url').subscribe();
   }
 }
